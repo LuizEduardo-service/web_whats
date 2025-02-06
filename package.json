@@ -1,7 +1,41 @@
 {
+  "name": "web_whats",
+  "version": "1.0.0",
+  "main": "chatbotPedidos.js",
+  "bin": {
+    "meu-projeto": "chatbotPedidos.js"
+  },
+  "scripts": {
+    "build": "pkg . --targets node18-win-x64"
+  },
+  "pkg": {
+    "assets": [
+      "/databricks.js",
+      "/.env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuizEduardo-service/web_whats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuizEduardo-service/web_whats/issues"
+  },
+  "homepage": "https://github.com/LuizEduardo-service/web_whats#readme",
+  "description": "",
+  "devDependencies": {
+    "electron": "^34.1.0"
+  },
   "dependencies": {
     "@databricks/sql": "^1.9.0",
     "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "puppeteer": "^24.2.0",
+    "puppeteer-core": "^24.2.0",
+    "qrcode": "^1.5.4",
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.26.0"
   }
